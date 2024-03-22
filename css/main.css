@@ -1,0 +1,237 @@
+*{
+    /* background-color: gray; */
+    margin:0;
+    text-decoration: none;
+
+    body{
+        background-color: gray;
+    }
+}
+.insta img{
+    height: 5vh;
+    width: 9vw;
+    opacity: 0.6;
+    position: relative;
+    top: 14px;
+    left: 12px;
+}
+
+.hoverMsg{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  position: absolute;
+  top: 52px;
+  z-index: 500;
+  left: 376px;
+  display: none;
+
+}
+#card{
+    margin: 0 40vw 0 40vw;
+    background-color: #000000 ; 
+    display: flex;
+    height: 17.8vh;
+    width: 30vw;
+    position: relative;
+    /* display: inline-block; */
+
+}
+
+#card1{
+    margin: 0 40vw 0vh 40vw;
+    background-color: #151515;
+    /* display: flex; */
+    height: 7.3vh;
+    width: 30vw;
+    position: relative;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    z-index: 1.8;
+  }
+
+  .fa-facebook-messenger{
+    position: relative;
+    top: 5px;
+    left: 266px;
+    opacity: 100;
+    scale: 1.7;
+    color: black;
+  }
+
+  #new li {
+    text-decoration: none;
+    color:  rgb(220, 206, 206);
+    list-style: none;
+    padding: 1px;
+  }
+
+  #new ul li a{
+    color:  rgb(220, 206, 206);
+    position: relative;
+    left: -36px;
+    top: 6px;
+  }
+
+  .fa-user-group{
+
+    position: relative;
+    top: -17px;
+    left: 79px;
+  }
+  .fa-star{
+
+    position: relative;
+    left: 79px;
+    top: -17px;
+  }
+
+  #new{
+    height: 80px;
+    width: 120px;
+    color:  rgb(220, 206, 206);
+    border-radius:5% ;
+    background-color: #2a2a2a;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    z-index: 400;
+    display: none;
+  }
+
+
+
+#shadow{
+    background-color: white;
+}
+
+
+.fullscreen {
+
+height: 400%;
+width: 70%;
+border-radius: 5%;
+border: 2px solid rgb(110, 110, 186);
+position: absolute;
+display: none;
+left: 62px;
+top: 30px;
+background-size: cover;
+background-position: center;
+overflow: hidden;
+z-index: 140;
+}    
+
+#progerssBar{
+    height: 4px;
+    width: 2vw;
+    border-radius: 10%;
+    background-color:  rgb(233, 53, 53);
+    color: blue;
+    animation: progressBar 10s linear  1 forwards;
+    margin: 1px 7px;
+}
+
+.container{
+    width:600px;
+    height:120px;
+    white-space: nowrap;
+    overflow-x: scroll;
+
+    overflow-y: hidden;
+}
+
+#storiyan::-webkit-scrollbar{
+  display: none; 
+}
+
+
+ .people{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin: 20px 2px;    
+   overflow: hidden;
+   display: inline-block;
+   z-index: 104;
+   position: relative;
+   object-position: center;
+}
+
+ .people::before {
+    content: "";
+    height: 71px;
+    width: 69px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 106;
+}
+ .people::after {
+    content: "";
+    height: 77px;
+    width: 75px;
+    border-radius: 50%;
+    background: linear-gradient(to right top,orange,deepPink 45%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 105;   
+    animation: colorChange 1s ease-in  infinite ;
+
+
+}
+.people img {
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 140;
+    top: 7.9px;
+    left: 8px;    
+}
+
+
+@keyframes progressBar {
+ 0% {
+    width: 3vw;
+ }
+ 30%{
+    width:32vw;
+ }
+ 60%{
+    width:62vw;
+ }
+ 80%{
+    width:65vw;
+ }
+ 100%{
+    width:90vw;
+ }
+}
+
+@keyframes colorChange {
+
+  0%{
+    background: linear-gradient(to right top,orange,deepPink );
+  }
+  30%{
+    background: linear-gradient(to right top,deepPink ,orange);
+  }
+  65%{
+    background: linear-gradient(to right bottom,deepPink ,orange);
+  }
+  100%{
+    background: linear-gradient(to left top,orange,deepPink );
+
+  }
+  
+}
+/* .card2{
+  backdrop-filter: ;
+} */
